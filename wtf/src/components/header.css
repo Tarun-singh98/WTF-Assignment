@@ -1,0 +1,136 @@
+.main-container {
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+  position: relative;
+  background-image: url("../assets/hero.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header-wrapper {
+  width: 100%;
+  height: 10vh;
+  background: transparent !important;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.header-wrapper.active {
+  background: black !important;
+}
+.inner-header-wrapper {
+  width: 90%;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent !important;
+}
+.header-logo {
+  background-color: transparent !important;
+}
+.header-logo img {
+  background-color: transparent !important;
+  width: 80px;
+}
+.header-list {
+  background-color: transparent !important;
+  z-index: 999;
+}
+.header-list ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  padding: 10px 5px;
+  background-color: transparent !important;
+}
+.header-list li {
+  font-weight: 100;
+  font-size: 20px;
+  color: rgb(201, 201, 201);
+  cursor: pointer;
+  background-color: transparent !important;
+}
+.header-list li:hover {
+  color: white;
+}
+.header-list li:active {
+  border-bottom: 4px;
+  border-color: red;
+}
+.header-list li button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 5px;
+  color: rgb(201, 201, 201);
+  background-image: linear-gradient(45deg, rgb(148, 0, 0), rgb(203, 96, 96));
+}
+.header-list li button:hover {
+  color: white;
+}
+.menu-Icon {
+  color: aliceblue;
+}
+.mobileView {
+  display: none;
+}
+@media screen and (max-width: 1198px) {
+  .header-list {
+    display: none;
+  }
+
+  .header-list-mobile {
+    position: absolute;
+    display: block;
+    list-style-type: none;
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    transition: all 0.5s ease-out;
+    background-color: transparent !important;
+  }
+  .header-list-mobile ul {
+    background-color: transparent !important;
+    z-index: 999;
+  }
+  .header-list-mobile li {
+    color: white;
+    text-align: left;
+    padding: 10px 0px 0px 60px;
+    width: 100%;
+    transition: all 0.5s ease;
+    background-color: transparent !important;
+  }
+  .header-list-mobile li button {
+    display: none;
+  }
+  .mobileView {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-wrapper,
+  .header-list-mobile {
+    background-color: black !important;
+  }
+  .header-list-mobile li {
+    padding: 10px 0px 0px 30px;
+  }
+  .mobileView {
+    background-color: transparent !important;
+  }
+}

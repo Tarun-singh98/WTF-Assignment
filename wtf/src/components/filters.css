@@ -1,0 +1,88 @@
+.filter-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #111111;  
+  width: 100%; 
+}
+.filter-field {
+  padding: 20px 0px 0px 80px;
+  font-size: 30px;
+  font-weight: 100;
+}
+.filter-text,
+.location,
+.price,
+.cities {
+  color: white;
+}
+.location input {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #eeeeee;
+  font-size: 14px;
+  padding: 15px;
+  width: 100%;
+  background-color: #494949;
+}
+.min,
+.max {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #eeeeee;
+  font-size: 14px;
+  padding: 15px;
+  width: 40%;
+  background-color: #494949;
+}
+.min {
+  margin-right: 20px;
+}
+.cities select {
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #eeeeee;
+  font-size: 14px;
+  padding: 15px;
+  width: 100%;
+  background-color: #494949;
+}
+.cards-field  {
+  margin-right: 70px;
+}
+.cards {
+  display: flex;
+  flex-direction: column !important;
+}
+.card{
+  height: 100%;
+  width: 100%;
+}
+.card01,
+.card02 {
+  border: 20px solid black;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1005px) {
+  .filter-field {
+    padding: 0px 0px 0px 20px;
+    font-size: 24px;
+  }
+  .cards-field {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 935px) {
+  .filter-main-container {
+    flex-direction: column;
+  }
+  .cards-field {
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 80%;
+    width: 90%;
+  }
+}
